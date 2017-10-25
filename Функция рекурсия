@@ -1,0 +1,5 @@
+def new_func(start, end, rez):
+    if start > end:
+        return rez
+    else:
+        return new_func(start + 1, end, rez + start)
