@@ -1,3 +1,10 @@
 def test(x, y):
     result = x*y
     return result
+
+x = int(input("вбей X: "))
+y = int(input('вбей Y: '))
+
+z = test(x, y)
+
+print(z)
