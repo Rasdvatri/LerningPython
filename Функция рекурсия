@@ -3,3 +3,7 @@ def new_func(start, end, rez):
         return rez
     else:
         return new_func(start + 1, end, rez + start)
+
+z = test(x, y)
+
+print(z)
