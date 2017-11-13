@@ -1,0 +1,12 @@
+import random
+
+def func(i, x):
+  if i == x:
+    print("Совпало, x =", i)
+  else:
+    print("Не совпало, х =", x)
+
+i = int(input('Введите "i" в диапозоне 1-6:'))
+x = random.randint(1,6)
+
+z = func(i,x)
