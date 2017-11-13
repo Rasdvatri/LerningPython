@@ -8,3 +8,6 @@ y = int(input('вбей Y: '))
 z = test(x, y)
 
 print(z)
+
+#Две строки в одной
+#print(test(x, y))
