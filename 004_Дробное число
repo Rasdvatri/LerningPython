@@ -1,0 +1,8 @@
+#использовать FLOAT
+def f(x):
+  a = x * x
+  b = x * a
+  c = b + a
+  return a, b, c
+
+print(f(float(input('number, pls:'))))
