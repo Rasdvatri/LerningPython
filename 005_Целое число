@@ -1,0 +1,8 @@
+#Использовать INT
+def f(x):
+  a = x * x
+  b = x * a
+  c = b + a
+  return a, b, c
+
+print(f(int(input('number, pls:'))))
