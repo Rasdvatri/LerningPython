@@ -1,0 +1,26 @@
+import random
+
+a = random.randint(1,9999)
+b = random.randint(1,9999)
+c1 = a&b
+c2 = a|b
+c3 = a^b
+c4 = ~a
+a1 = random.randint(1,8)
+c5 = a>>a1
+a2 = random.randint(1,8)
+c6 = a<<a2
+print("===========")
+print("Рандомное a:", a)
+print("Рандомное b:", b)
+print("===Результат побитовых операций")
+print("c1 = ", c1, " где", a, "&", b)
+print("c2 = ", c2, " где", a, "|", b)
+print("c3 = ", c3, " где", a, "^", b)
+print("c4 = ", c4, " где", "~", a)
+print("c5 = ", c5, " где", a, ">>", a1)
+print("c6 = ", c6, " где", a, "<<", a2)
+print("===Результат побитовых операций по формуле: (c1%c2*c3/c4-c5+c6)/b1")
+b1 = random.randint(0,999)
+print("b1 = ", b1)
+print("Итого:", (c1%c2*c3/c4-c5+c6)/b1)
