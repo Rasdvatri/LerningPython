@@ -1,0 +1,32 @@
+print("Проверка значения на число")
+x = input("Введите число:")
+
+def isint(x):
+  try:
+    int(x)
+    return True
+  except Exception:
+    return False
+
+z = isint(x)
+
+def isflo(x):
+  try:
+    float(x)
+    return True
+  except Exception:
+    return False
+
+q = isflo(x)
+w = isint(x)
+
+def isnum(w):
+  if z is True:
+    return 'Число: '+ x +' - целое'
+  elif q is True:
+    return 'Число: '+ x +' - дробное'
+  else:
+    return 'Значение: '+ x +' - не число'
+
+e = isnum(w)
+print(e)
