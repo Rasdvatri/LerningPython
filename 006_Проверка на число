@@ -1,25 +1,32 @@
 print("Проверка значения на число")
 x = input("Введите число:")
 
+#try-except - конструкция обработки исключений
+#try - блок выполнения инструкции, которая может породить исключение(ошибку/уведомление)
+#except - блок перехвата исключений (ошибок/уведомлений)
+#BaseException - базовое исключение, от которого берут начало все остальные (SyntaxError, TypeError, ZeroDivisionError, ValueError)
+
+#Функция проверки на целое число
 def isint(x):
   try:
     int(x)
     return True
-  except Exception:
+  except BaseException:
     return False
 
 z = isint(x)
 
+#Функция проверки на дробное число
 def isflo(x):
   try:
     float(x)
     return True
-  except Exception:
+  except BaseException:
     return False
 
 w = isflo(x)
-#w = isint(x)
 
+#Проверка и вывод результатов проверки
 def isnum(z):
   if z is True:
     return '=== Число: "'+ x +'" - целое ==='
