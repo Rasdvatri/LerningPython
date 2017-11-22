@@ -1,0 +1,14 @@
+x = int(input('до 4 циферей, плз'))
+
+def f(n):
+  if n-1 < 999:
+    q = str(n)
+    return q.rjust(4,'0')
+  elif n+1 > 9999:
+    return 'Только 4 цифры, плз'
+  else:
+    return n
+
+z = f(x)
+
+print(z)
