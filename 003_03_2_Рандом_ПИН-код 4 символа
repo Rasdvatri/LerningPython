@@ -1,0 +1,14 @@
+import random
+
+x = random.randint(0,9999)
+
+def f(n):
+  if n-1 < 999:
+    q = str(n)
+    return q.rjust(4,'0')
+  else:
+    return n
+
+z = f(x)
+
+print(z)
