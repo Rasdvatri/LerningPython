@@ -5,9 +5,9 @@ while x != 0:
   if n1 <= x:
     if n2 <= x:
       print(n1)
-      print(range(n1,x))
+      print(range(n1,x)) #Визуализация диапазона для n1
       print(n2)
-      print(range(n2,x))
+      print(range(n2,x)) #Визуализация диапазона для n2
       n1 = n1 + n2
       n2 = n1 + n2
     else:
