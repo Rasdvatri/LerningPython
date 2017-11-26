@@ -1,7 +1,8 @@
+print('Числа Фибоначи (только положительные)')
 n1 = 0
 n2 = 1
-x = int(input('input number, plz:'))
-while x != 0:
+x = int(input('Введите, пожалуйста, число:'))
+while x >= 0:
   if n1 <= x:
     if n2 <= x:
       print(n1)
@@ -16,3 +17,6 @@ while x != 0:
       break
   else:
     break
+else:
+  print('Число ', x, ' Отрицательное')
+  print('Данная функция работает только с положительными значениями')
