@@ -1,0 +1,17 @@
+import socket, time
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.settimeout(0.1)
+
+delay = 2
+connected = False
+
+while not connected:
+    try:
+        s.connect(("localhost", 7777))    # I'm running my test server locally
+        connected = True
+
+    except socket.timeout:
+        print("Timed out. Waiting " + str(round(delay, 1)) + "s before next attempt.")
+        time.sleep(delay)
+        delay -= 0.1
